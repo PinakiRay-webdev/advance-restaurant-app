@@ -1,0 +1,4 @@
+header li{
+    font-size: clamp(14px , 1vw , 24px);
+    text-transform: capitalize;
+}
