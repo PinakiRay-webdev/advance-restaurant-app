@@ -10,13 +10,22 @@
 </head>
 <body>
     <header class="h-[10vh] border  bg-[#1b263b] flex justify-between items-center px-[2%] py-2" >
-        <img class="h-[100%]" src="assets/logo.svg" alt="logo">
-        <div class="flex gap-4" >
-            <nav id="nav" class="flex items-center gap-[1rem]">
+        <section class="left-nav">
+            <img class="h-[100%]" src="assets/logo.svg" alt="logo">
+        </section>
+        <section class="right-nav flex gap-4" >
+            <nav id="nav" class="hidden sm:flex items-center gap-[1rem]">
             </nav>
             <button class="bg-red-500 px-3 py-1 text-white rounded cursor-pointer" >Login</button>
-        </div>
+        </section>
     </header>
+
+    <main>
+        <section id="banner" >
+            <img src="assets/banner.svg" alt="">
+            <button>Check out all Offers</button>
+        </section>
+    </main>
 
     <script src="app.js"></script>
 </body>
