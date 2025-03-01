@@ -1,81 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>restaurant app</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <!-- tailwindcss css  -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-</head>
-<body>
-    <header class="h-[10vh] border  bg-[#1b263b] flex justify-between items-center px-[2%] py-2" >
-        <section class="left-nav">
-            <img class="h-[100%]" src="assets/logo.svg" alt="logo">
-        </section>
-        <section class="right-nav flex gap-4" >
-            <nav id="nav" class="hidden sm:flex items-center gap-[1rem]">
-            </nav>
-            <button class="bg-red-500 px-3 py-1 text-white rounded cursor-pointer" >Login</button>
-        </section>
+
+    <!-- font awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header
+      class="h-[12vh] border bg-[#1b263b] flex justify-between items-center px-[2%]"
+    >
+      <section class="left-nav flex items-center gap-1">
+        <i
+          id="hamburger"
+          class="fa-solid fa-burger text-4xl text-red-400 cursor-pointer"
+        ></i>
+        <img class="h-[100%]" src="assets/logo.svg" alt="logo" />
+      </section>
+      <section class="middle-nav">
+        <div class="flex bg-white mb-2">
+          <input
+            class="bg-transparent w-full px-2 py-1 rounded outline-none"
+            type="text"
+            placeholder="Search your item"
+          />
+          <button class="bg-red-300 py-1 px-3">Search</button>
+        </div>
+        <nav id="nav" class="hidden sm:flex items-center gap-[1rem]"></nav>
+      </section>
+      <button class="bg-red-500 px-3 py-1 text-white rounded cursor-pointer">
+        Login
+      </button>
     </header>
 
     <main>
+      <!-- banner section  -->
+      <section id="banner">
+        <img src="assets/banner.svg" alt="" />
+        <button>Check out all Offers</button>
+      </section>
 
-        <!-- banner section  -->
-        <section id="banner" >
-            <img src="assets/banner.svg" alt="">
-            <button>Check out all Offers</button>
-        </section>
+      <section id="menu" class="my-6 bg-[#eaf4f4] py-4">
+        <article id="heading">
+          <h2 class="">Our Menu</h2>
+        </article>
 
+        <article class="menu-lists">
+          <!-- menu 1  -->
+          <div id="item-1" class="menu-item">
+            <div class="bg-[#cce3de]">
+              <img src="assets/item1.svg" alt="" />
+            </div>
+            <div id="item-bio">
+              <h3 class="text-red-500 font-semibold text-xl">Item name</h3>
+              <p class="text-zinc-600 text-base">Lorem ipsum dolor sit amet</p>
+              <p>price and discount</p>
+              <button class="bg-black w-full py-1 mt-2 text-white">
+                Add to cart
+              </button>
+            </div>
+          </div>
 
-        <section id="menu" class="my-6 bg-[#eaf4f4] py-4" >
-            <article id="heading" >
-                <h2 class="" >Our Menu</h2>
-            </article>
+          <div id="item-2" class="menu-item">
+            <div class="bg-[#cce3de]">
+              <img src="assets/item2.svg" alt="" />
+            </div>
+            <div id="item-bio">
+              <h3 class="text-red-500 font-semibold text-xl">Item name</h3>
+              <p class="text-zinc-600 text-base">Lorem ipsum dolor sit amet</p>
+              <p>price and discount</p>
+              <button class="bg-black w-full py-1 mt-2 text-white">
+                Add to cart
+              </button>
+            </div>
+          </div>
 
-            <article class="menu-lists" >
-                <!-- menu 1  -->
-                <div id="item-1" class="menu-item" >
-                    <div class="bg-[#cce3de]" >
-                        <img src="assets/item1.svg" alt="">
-                    </div>
-                    <div id="item-bio">
-                        <h3 class="text-red-500 font-semibold text-xl" >Item name</h3>
-                        <p class="text-zinc-600 text-base" >Lorem ipsum dolor sit amet </p>
-                        <p>price and discount</p>
-                        <button class="bg-black w-full py-1 mt-2 text-white" >Add to cart</button>
-                    </div>
-                </div>
-
-                <div id="item-2" class="menu-item" >
-                    <div class="bg-[#cce3de]" >
-                        <img src="assets/item2.svg" alt="">
-                    </div>
-                    <div id="item-bio">
-                        <h3 class="text-red-500 font-semibold text-xl" >Item name</h3>
-                        <p class="text-zinc-600 text-base" >Lorem ipsum dolor sit amet </p>
-                        <p>price and discount</p>
-                        <button class="bg-black w-full py-1 mt-2 text-white" >Add to cart</button>
-                    </div>
-                </div>
-
-                <div id="item-3" class="menu-item" >
-                    <div class="bg-[#cce3de]" >
-                        <img src="assets/item3.svg" alt="">
-                    </div>
-                    <div id="item-bio">
-                        <h3 class="text-red-500 font-semibold text-xl" >Item name</h3>
-                        <p class="text-zinc-600 text-base" >Lorem ipsum dolor sit amet </p>
-                        <p>price and discount</p>
-                        <button class="bg-black w-full py-1 mt-2 text-white" >Add to cart</button>
-                    </div>
-                </div>
-
-            </article>
-        </section>
+          <div id="item-3" class="menu-item">
+            <div class="bg-[#cce3de]">
+              <img src="assets/item3.svg" alt="" />
+            </div>
+            <div id="item-bio">
+              <h3 class="text-red-500 font-semibold text-xl">Item name</h3>
+              <p class="text-zinc-600 text-base">Lorem ipsum dolor sit amet</p>
+              <p>price and discount</p>
+              <button class="bg-black w-full py-1 mt-2 text-white">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </article>
+      </section>
     </main>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
