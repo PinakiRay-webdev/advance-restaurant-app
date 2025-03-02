@@ -66,12 +66,15 @@ h2 {
   width: 90%;
   margin: 0px auto;
   margin-top: 35px;
+  gap: 2rem;
 }
 
 .menu-item {
   box-shadow: 0px 0px 2px 0px black;
   height: fit-content;
   /* flex: 1 0 200px; */
+  min-width: 250px;
+
   background-color: white;
   border-radius: 10px;
   width: 25%;
@@ -97,6 +100,29 @@ h2 {
 
 div #item-bio{
   padding: 10px;
+}
+
+footer{
+  padding: 2rem 4rem;
+  background-color: #353535;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: flex-start;
+}
+
+@media (max-width: 929px){
+  footer{
+    padding: 2rem 4rem;
+    background-color: #353535;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3rem;
+    align-items: flex-start;
+  }
+
+  footer form{
+    column-span: 3;
+  }
 }
 
 @media (max-width: 640px) {
