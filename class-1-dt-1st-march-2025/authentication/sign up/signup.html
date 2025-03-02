@@ -1,14 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sign up</title>
-    <link rel="stylesheet" href="../css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="../css/login.styles.css" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <section class="signup">
+        <article id="right">
+            <img src="../../assets/signup-bg.jpg" alt="" />
+          </article>
+      <article id="left" class="flex justify-center items-center relative">
+        <header class="absolute top-0 w-full p-2" >
+          <a href="../../index.html"><img class="w-20 cursor-pointer" src="../../assets/logo.svg" alt=""></a>
+        </header>
+        <div class="login-box w-[40%]">
+          <h2>Get started today</h2>
+          <p id="login-text">
+            Today is a new day. It's your day. You shape it. Sign in to start
+            managing your projects.
+          </p>
 
-</head>
-<body>
-    
-</body>
+          <form>
+            <!-- first and last name  -->
+            <div class="flex gap-2" >
+                <fieldset
+                class="border-2 w-[50%] px-2 py-1 border-zinc-400 rounded bg-slate-200"
+              >
+                <legend class="text-zinc-600 font-semibold">First Name</legend>
+                <input
+                  class="outline-none w-[100%]"
+                  placeholder="Jon"
+                  type="text"
+                  name="first name"
+                />
+              </fieldset>
+              <fieldset
+              class="border-2 w-[50%] px-2 py-1 border-zinc-400 rounded bg-slate-200"
+            >
+              <legend class="text-zinc-600 font-semibold">Last Name</legend>
+              <input
+                class="outline-none w-[100%]"
+                placeholder="snow"
+                type="text"
+                name="last name"
+              />
+            </fieldset>
+            </div>
+            <fieldset
+              class="border-2 px-2 py-1 border-zinc-400 rounded bg-slate-200 mt-4"
+            >
+              <legend class="text-zinc-600 font-semibold">Email</legend>
+              <input
+                class="outline-none"
+                placeholder="jon@example.com"
+                type="email"
+                name="email"
+              />
+            </fieldset>
+
+            <fieldset
+              class="border-2 px-2 py-1 border-zinc-400 mt-4 mb-2 rounded bg-slate-200"
+            >
+              <legend class="text-zinc-600 font-semibold">Password</legend>
+              <input
+                class="outline-none"
+                type="password"
+                placeholder="********"
+                name="password"
+              />
+            </fieldset>
+            <button
+              class="bg-black w-full rounded py-2 mt-6 text-white cursor-pointer"
+            >
+              Sign up
+            </button>
+          </form>
+
+          <!-- or section  -->
+
+          <div class="flex items-center gap-4 my-4">
+            <div class="h-[2px] w-full bg-zinc-400"></div>
+            <p>Or</p>
+            <div class="h-[2px] w-full bg-zinc-400"></div>
+          </div>
+
+          <!-- social media  -->
+           <div class="flex gap-4" >
+               <div
+                 class="flex gap-4 justify-center items-center bg-slate-200 border-2 border-zinc-400 py-1 rounded mt-2 w-full"
+               >
+                 <img class="w-8" src="../../assets/google.svg" alt="google icon" />
+               </div>
+     
+               <div
+                 class="flex gap-4 justify-center items-center bg-slate-200 border-2 border-zinc-400 py-1 rounded mt-2 w-full"
+               >
+                 <img class="w-8" src="../../assets/phone.svg" alt="google icon" />
+               </div>
+           </div>
+
+          <p class="text-sm text-slate-500 font-semibold mt-3 text-center">Already have an account? <a href="../login/Login.html"><span class="text-blue-700 cursor-pointer" >Log in</span></a></p>
+        </div>
+      </article>
+    </section>
+  </body>
 </html>

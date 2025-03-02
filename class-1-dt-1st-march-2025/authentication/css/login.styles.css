@@ -3,9 +3,9 @@ body{
     padding: 0px;
 }
 
-.login{
+.login , .signup{
     display: grid;
-    grid-template-columns: 1.3fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
 }
 
 #left{

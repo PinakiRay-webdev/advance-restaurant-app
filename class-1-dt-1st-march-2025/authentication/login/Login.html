@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>login</title>
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/login.styles.css" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
   <body>
     <section class="login">
-      <article id="left" class="flex justify-center items-center">
+      <article id="left" class="flex justify-center items-center relative">
+        <header class="absolute top-0 w-full p-2" >
+          <a href="../../index.html"><img class="w-20 cursor-pointer" src="../../assets/logo.svg" alt=""></a>
+        </header>
         <div class="login-box w-[50%]">
           <h2>Welcome back</h2>
           <p id="login-text">
@@ -73,7 +76,7 @@
             <p class="text-zinc-600">Login with Number</p>
           </div>
 
-          <p class="text-sm text-slate-500 font-semibold mt-3 text-center">Don't you have an account? <span class="text-blue-700 cursor-pointer" >Sign up</span></p>
+          <p class="text-sm text-slate-500 font-semibold mt-3 text-center">Don't you have an account? <a href="../sign up/signup.html"><span class="text-blue-700 cursor-pointer" >Sign up</span></a></p>
         </div>
       </article>
       <article id="right">
