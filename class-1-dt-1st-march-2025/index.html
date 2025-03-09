@@ -39,11 +39,8 @@
         </div>
         <nav id="nav" class="hidden sm:flex items-center gap-[1rem]"></nav>
       </section>
-      <a href="authentication/login/Login.html">
-        <button class="bg-red-500 px-3 py-1 text-white rounded cursor-pointer">
-          Login
-        </button>
-      </a>
+      <div id="account">
+      </div>
     </header>
 
     <main>
@@ -59,10 +56,14 @@
           <h2 class="">Our Menu</h2>
         </article>
 
+        <article id="category" >
+
+        </article>
+
         <!-- best seller  -->
         <article
           id="best-seller"
-          class="menu-lists rounded-xl my-5 py-4 px-16 bg-[#f8edeb]"
+          class="menu-lists rounded-xl my-5 py-4 px-6 bg-[#f8edeb] w-[85%] mx-auto"
         >
           <header
             class="flex justify-between items-center border-l-4 border-red-700 px-3"
@@ -164,6 +165,7 @@
         </div>
     </footer>
 
-    <script src="app.js"></script>
+    <script src="authentication/auth.js"></script>
+    <script type="module" src="app.js"></script>
   </body>
 </html>

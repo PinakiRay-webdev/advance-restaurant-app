@@ -23,7 +23,7 @@
             managing your projects.
           </p>
 
-          <form>
+          <form id="signupForm">
             <!-- first and last name  -->
             <div class="flex gap-2" >
                 <fieldset
@@ -34,7 +34,8 @@
                   class="outline-none w-[100%]"
                   placeholder="Jon"
                   type="text"
-                  name="first name"
+                  name="firstName"
+                  required
                 />
               </fieldset>
               <fieldset
@@ -43,9 +44,10 @@
               <legend class="text-zinc-600 font-semibold">Last Name</legend>
               <input
                 class="outline-none w-[100%]"
-                placeholder="snow"
+                placeholder="Snow"
                 type="text"
-                name="last name"
+                name="lastName"
+                required
               />
             </fieldset>
             </div>
@@ -58,6 +60,7 @@
                 placeholder="jon@example.com"
                 type="email"
                 name="email"
+                required
               />
             </fieldset>
 
@@ -70,10 +73,12 @@
                 type="password"
                 placeholder="********"
                 name="password"
+                required
               />
             </fieldset>
             <button
               class="bg-black w-full rounded py-2 mt-6 text-white cursor-pointer"
+              type="submit"
             >
               Sign up
             </button>
@@ -106,5 +111,6 @@
         </div>
       </article>
     </section>
+    <script src="../auth.js" ></script>
   </body>
 </html>
