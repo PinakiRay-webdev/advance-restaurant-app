@@ -2,9 +2,10 @@ import { navItems } from './data/navItems.js';
 import { foodItems } from './data/foodItems.js';
 import { categoryArray } from './data/foodCategory.js';
 
-document.addEventListener('DOMContentLoaded', () => {
+
   const nav = document.querySelector("#nav");
   const category = document.querySelector('#category');
+  const bestSellerList = document.querySelector('.best-seller-list')
 
   navItems.forEach((ele) => {
     const list = document.createElement("li");
@@ -60,4 +61,36 @@ document.addEventListener('DOMContentLoaded', () => {
     loginLink.appendChild(loginButton);
     account.appendChild(loginLink);
   }
-});
+
+  foodItems.forEach((food) =>{
+    const menuItem = document.createElement('div');
+    const itemImageBox = document.createElement('div');
+    const itemImage = document.createElement('img');
+    const itemBio = document.createElement('div');
+    const itemName = document.createElement('h3');
+    const itemInfo = document.createElement('p');
+    const newPrice = document.createElement('p');
+    const oldPrice = document.createElement('span');
+    const addToCartBtn = document.createElement('button');
+
+    menuItem.className = 'menu-item';
+    itemImageBox.className = 'bg-[#fae1dd] rounded-t-xl'
+    itemImage.setAttribute('src' , food.image);
+    itemBio.setAttribute('id' , 'item-bio');
+    itemName.className = 'text-red-500 font-semibold text-xl';
+    itemName.textContent = food.name
+    itemInfo.className = 'text-zinc-600 text-base'
+    itemInfo.textContent = 'Lorem ipsum dolor sit amet';
+    newPrice.textContent = food.newPrice;
+    oldPrice.setAttribute('id' , 'old-price');
+    oldPrice.textContent = food.oldPrice;
+    addToCartBtn.className = 'bg-[#353535] w-full py-2 mt-2 text-white rounded-b-xl';
+    addToCartBtn.textContent = 'Add to cart';
+
+    itemImageBox.append(itemImage);
+    newPrice.append(oldPrice)
+    itemBio.append(itemName , itemInfo , newPrice)
+    menuItem.append(itemImageBox , itemBio , addToCartBtn);
+
+    bestSellerList.append(menuItem)
+  })
