@@ -1,0 +1,1 @@
+export const categoryArray = ["all", "beverages", "main courses", "starters" , "desserts"];

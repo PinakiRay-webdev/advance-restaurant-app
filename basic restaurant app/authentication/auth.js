@@ -13,6 +13,8 @@ if (signUp) {
     };
 
     localStorage.setItem("userData", JSON.stringify(user));
-    alert("User data saved to local storage!");
+    alert("Logged in successfully");
+    window.location.href = '/'  //to redirect again to home page
   });
 }
+ 
